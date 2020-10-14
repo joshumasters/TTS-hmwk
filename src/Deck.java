@@ -23,6 +23,8 @@ public class Deck {
     
 
     public Card dealCard(){
+        Card card = cards.get(0);
+        cards.remove(0);
         return card;
     }
 
@@ -30,8 +32,8 @@ public class Deck {
 
     }
 
-    public Card discardCard(){
-
+    public void discardCard(Card card){
+        discard.add(card);
     }
 
     public int getNumberOfCards() {
@@ -48,6 +50,17 @@ public class Deck {
 
     public ArrayList<Card> getDiscard() {
         return this.discard;
+    }
+
+    @Override
+    public String toString(){
+
+        String result = "";
+        for (Card card : this.cards) {
+            result += (card + "\n");
+        }
+        return result;
+
     }
 
     
