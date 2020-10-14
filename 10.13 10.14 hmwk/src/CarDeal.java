@@ -1,6 +1,7 @@
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
-import java.util.Map.Entry;
+
 
 public class CarDeal {
     Scanner input = new Scanner(System.in);
@@ -9,7 +10,7 @@ public class CarDeal {
     String desiredMake;
     boolean haveModel = false;
 
-    HashMap<String, String> ourCars = new HashMap<>();
+    HashMap<String, String> ourCars = new HashMap<String, String>();
 
     // <Model, Make>
     public void run() {
@@ -25,12 +26,14 @@ public class CarDeal {
         desiredModel = input.nextLine();
         System.out.println("Oh, you're looking for a " + desiredModel + "?");
 
-        for (Map.Entry<String, String> entry : ourCars.entrySet()) {
+        for (Map.Entry<String, String> entry: ourCars.entrySet()) {
             if(desiredModel == entry.getKey()) {
                 haveModel = true;
                 desiredMake = entry.getValue();
             }
         }
+
+        System.out.println(haveModel);
 
         if(haveModel == true){
             System.out.println("We have several " + desiredMake + "s right this way");
