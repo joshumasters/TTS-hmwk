@@ -4,8 +4,12 @@ public class Main {
 
         // array.run();
 
-        CarDeal newDeal = new CarDeal();
+        // CarDeal newDeal = new CarDeal();
 
-        newDeal.run();
+        // newDeal.run();
+
+        DataStructuresII powerArray = new DataStructuresII();
+
+        powerArray.toPower(4, 2);
     }
 }
