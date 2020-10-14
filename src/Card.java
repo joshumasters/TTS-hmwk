@@ -5,5 +5,19 @@ public class Card {
     private int value;
 
     private Color color;
+
+
+    public Suit getSuit() {
+        return this.suit;
+    }
+
+    public int getValue() {
+        return this.value;
+    }
+
+    public Color getColor() {
+        return this.color;
+    }
+
     
 }
