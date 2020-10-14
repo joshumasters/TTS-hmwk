@@ -28,8 +28,8 @@ public class Deck {
         return card;
     }
 
-    public void shuffleCard(){
-
+    public void shuffleCards(){
+        
     }
 
     public void discardCard(Card card){

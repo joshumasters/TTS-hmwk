@@ -3,7 +3,7 @@ public class Main {
 
         Deck deck = new Deck();
 
-        System.out.println(deck.getCards());
+        System.out.println(deck.toString());
         
     }
 }
