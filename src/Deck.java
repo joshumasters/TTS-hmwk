@@ -9,11 +9,36 @@ public class Deck {
     ArrayList<Card> cards = new ArrayList<Card>();
     ArrayList<Card> discard = new ArrayList<Card>();
 
+    public Deck(){
+        this.numberOfCards = 52;
+        this.shuffled = false;
+
+        for (int value = 1; value <= 13; value++) {
+            for (int suit = 0; suit < 4; suit++) {
+                Card card = new Card(Suit.values()[suit], value);
+                cards.add(card);
+            }
+            } 
+        }
+    
+
+    public Card dealCard(){
+        return card;
+    }
+
+    public void shuffleCard(){
+
+    }
+
+    public Card discardCard(){
+
+    }
+
     public int getNumberOfCards() {
         return this.numberOfCards;
     }
 
-    public boolean isShuffled() {
+    public boolean getShuffled() {
         return this.shuffled;
     }
 
@@ -26,22 +51,6 @@ public class Deck {
     }
 
     
-    
-    public Deck(){
-
-    }
-
-    public Card dealCard(){
-        
-    }
-
-    public void shuffleCard(){
-
-    }
-
-    public Card discardCard(){
-
-    }
 
 
 }
