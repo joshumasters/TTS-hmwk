@@ -27,14 +27,11 @@ public class CarDeal {
         System.out.println("Oh, you're looking for a " + desiredModel + "?");
 
         for (Map.Entry<String, String> entry: ourCars.entrySet()) {
-            if(desiredModel == entry.getKey()) {
+            if(desiredModel.equals(entry.getKey())) {
                 haveModel = true;
                 desiredMake = entry.getValue();
             }
         }
-
-        System.out.println(haveModel);
-
         if(haveModel == true){
             System.out.println("We have several " + desiredMake + "s right this way");
         }else if (haveModel == false){
