@@ -6,6 +6,11 @@ public class Card {
 
     private Color color;
 
+    public Card(Suit suit, int value){
+        this.suit = suit;
+        this.value = value;
+    }
+
 
     public Suit getSuit() {
         return this.suit;
