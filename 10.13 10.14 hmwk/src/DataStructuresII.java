@@ -18,8 +18,7 @@ public class DataStructuresII {
    }
 
    public static void main(String[] args) {
-       toPower(5, 3);
-       toPower(4, 2);
+       toPower(5,4);
    }
 
 }
